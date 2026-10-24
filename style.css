@@ -1,0 +1,127 @@
+/* Style the whole webpage */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #fff8f5;
+color: #4a2c2a;
+}
+
+/* Style the header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: #ffe0e6;
+}
+
+/* Style the navigation links */
+nav a {
+text-decoration: none;
+color: #4a2c2a;
+margin-left: 20px;
+}
+
+/* Style the hero section */
+.hero {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+padding: 60px 40px;
+}
+
+/* Style the hero heading */
+.hero h1 {
+font-size: 42px;
+color: #c44569;
+}
+
+/* Style the hero paragraph */
+.hero p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+/* Style the Order Now button */
+.button {
+display: inline-block;
+background-color: #c44569;
+color: white;
+padding: 12px 24px;
+text-decoration: none;
+border-radius: 6px;
+}
+
+/* Style the hero image */
+.hero-image img {
+width: 350px;
+max-width: 100%;
+border-radius: 12px;
+}
+
+/* Style the features section */
+.features {
+padding: 40px;
+text-align: center;
+}
+
+/* Arrange the three service cards */
+.card-container {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+
+/* Style each service card */
+.card {
+background-color: white;
+padding: 20px;
+border: 1px solid #f0c5ce;
+border-radius: 10px;
+flex: 1;
+}
+
+/* Style the about section */
+#about {
+padding: 40px;
+text-align: center;
+}
+
+/* Style the footer */
+footer {
+background-color: #ffe0e6;
+text-align: center;
+padding: 25px;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+gap: 15px;
+}
+
+nav a {
+    margin: 5px;
+}
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.card-container {
+    grid-template-columns:1fr;
+}
+}
+/*i changed the card container from flex to grid, making the service cards appear on a single column on smaller scrrens. making the webpage easier to view on mobile phones.*/
